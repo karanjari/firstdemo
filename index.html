@@ -1,0 +1,432 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+    <title>Online Shopping Website</title>
+</head>
+<!--Navbar start-->
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container">
+        <span class="nav-item ms-auto">
+            <!--Here flipcart Logo-->
+            <a href=""><img src="/Images/flipkart-plus_8d85f4.png" alt="" class="image-fluid" height="20px"></a>
+            <div class="d-flex">
+                <a href="" class="text-light" style="font-size: 15px;">
+                    <i>
+                        Explore
+                    </i>
+                    <span class="text-warning fs-6">
+                        plus
+                        <!--Here a flipkart plus another logo-->
+                        <img src="Images/plus_aef861.png" alt="plus" height="10px">
+                    </span>
+                </a>
+            </div>
+        </span>
+        <!--This is buttor for small screen and menu is avaiable-->
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--This is container who is display on small screen via button click this is collapse block-->
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <div class="form-group mt-1 m-0 col-6 ml-2">
+                <div class="input-group-text text-primary bg-white">
+                    <input type="text" class="form-control border-0" placeholder="Search More Product" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <span class="bg-white px-2" id="basic-addon2">
+                        <svg style="border: none;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <ul class="navbar-nav mx-auto">
+                <!--Login button and add css class to looks good-->
+                <li class="navbar-item">
+                    <button type="button" class="btnlogin">Login</button>
+                </li>
+                <!--here added a dropdown list-->
+                <li class="navbar-item dropdown">
+                    <a href="" class="nav-link mx-3 text-light" data-toggle="dropdown" style="font-size: 14px;"><b>More</b>  <i class="fa fas fa-angle-down" style="color: white; font-size: 14px;"></i></a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">24x7 Customer care</a>
+                        <a class="dropdown-item" href="#">Notifications</a>
+                        <a class="dropdown-item" href="#">Help</a>
+                    </div>
+                </li>
+                <li class="navbar-item">
+                    <a href="" class="nav-link mx-3 text-light" style="font-size: 14px;;">
+                        <i class="fa fa-shopping-cart" style="color: white; font-size: 14px;"></i> <b>
+                            Cart
+                        </b>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--Navbar End-->
+<!--Section images strats-->
+<section class="py-4 bg-white">
+    <!--container strat-->
+    <div class="container">
+        <!--here i use bootsrap class display flex for images same block horizonatally-->
+        <!--and align center-->
+        <div class="d-sm-flex align-items-center justify-content-between imagesalign">
+            <div>
+                <img src="Images/f15c02bfeb02d15d.png" alt="" class="img-fluid" height="50px" width="50px">
+                <p class="d-block fontsx">Top offers</p>
+            </div>
+            <div>
+                <img src="Images/29327f40e9c4d26b.png" alt="" class="img-fluid" height="50px" width="50px">
+                <p class="d-block fontsx">Grocery</p>
+            </div>
+            <div>
+                <img src="Images/22fddf3c7da4c4f4.png" alt="" class="img-fluid" height="50px" width="50px">
+                <p class="d-block fontsx">Mobiles</p>
+            </div>
+            <div>
+                <img src="Images/82b3ca5fb2301045.png" alt="" class="img-fluid" height="50px" width="50px">
+                <p class="d-block fontsx">Fashions  <i class="fa fas fa-angle-down"></i></p>
+            </div>
+            <div>
+                <img src="Images/69c6589653afdb9a.png" alt="" class="img-fluid" height="50px" width="50px">
+                <p class="d-block fontsx">Electronics  <i class="fa fas fa-angle-down"></i></p>
+            </div>
+            <div>
+                <img src="Images/ab7e2b022a4587dd.jpg" alt="" class="img-fluid" height="50px" width="50px">
+                <p class="d-block fontsx">Home</p>
+            </div>
+            <div>
+                <img src="Images/0ff199d1bd27eb98.png" alt="" class="img-fluid" height="50px" width="50px">
+                <p class="d-block fontsx">Appliances <i class="fa fas fa-angle-down"></i></p>
+            </div>
+            <div>
+                <img src="Images/71050627a56b4693.png" alt="" class="img-fluid" height="50px" width="50px">
+                <p class="d-block fontsx">Travel</p>
+            </div>
+            <div>
+                <img src="Images/dff3f7adcf3a90c6.png" alt="" class="img-fluid" height="50px" width="50px">
+                <p class="d-block fontsx">Beauty, Toys & More <i class="fa fas fa-angle-down"></i></p>
+            </div>
+        </div>
+    </div>
+    <!--container End-->
+</section>
+<!--Section images Ends-->
+<body bg-color="pink">
+    <!--Container Strat-->
+    <div class="container mt-3 ">
+        <!--Row start-->
+        <div class="row">
+            <!--col 1to 10-->
+            <div class="col-10">
+                <!--Deals of the day-->
+                <!--Section strat-->
+                <section>
+                    <div class="d-flex align-items-center justify-content-between imagesalign box">
+                        <!--Card Start-->
+                        <div class="card">
+                            <div class="card-header bg-white">
+                                <div class="inline-block">
+                                    <span class="d-flex justify-content-between">
+                                        <p class="mb-0" style="font-size: 18px;">
+                                            <b>Deals of the day </b><img src="Images/timer.svg" height="20px" width="20px" alt=""> <i class="fa fas fa-clock"></i>
+                                            22:07:36 left
+                                        </p>
+
+                                        <button class="btn btn-primary float-right">View All</button>
+                                    </span>
+                                </div>
+                            </div>
+                            <!--card body start-->
+                            <div class="card-body" style="overflow-y: auto;">
+                                <div class="col-12 d-flex">
+                                    <div class="pr-3 imghoverr">
+                                        <img src="Images/c-ex187-casio-original-imafgh35rvuawpu5.jpeg" alt="" class="img-fluid" height="100px" width="100px">
+                                        <p class="d-block pt-2 mb-1" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Casio,Fastrack,Sonata</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">From &#x20B9 599</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Knockout Deals</p>
+                                    </div>
+                                    <div class="pr-3 imghoverr">
+                                        <img src="Images/8-2-luggage-picture.png" alt="" class="imagedealofday" height="100px" width="100px">
+                                        <p class="d-block pt-2 mb-1" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Bags and Luggage</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">Upto 80% Off</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Grab The Deal</p>
+                                    </div>
+                                    <div class="pr-3 imghoverr">
+                                        <img src="Images/thumbnail_deal-2.jpg" alt="" class="imagedealofday">
+                                        <p class="d-block pt-2 mb-1" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Home, Temple</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">Upto 60% Off</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Knockout Deals</p>
+                                    </div>
+                                    <div class="pr-3 imghoverr">
+                                        <img src="Images/thumbnail_deal-10.jpg" alt="" class="imagedealofday" height="100px" width="100px">
+                                        <p class="d-block pt-2 mb-1" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Home Decore</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">From &#x20B9 999</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Best Deal</p>
+                                    </div>
+                                    <div class="pr-3 imghoverr">
+                                        <img src="Images/thumbnail_deal-5.jpg" alt="" class="imagedealofday" height="100px" width="100px">
+                                        <p class="d-block pt-2 mb-1" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Best of Brands!</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">From &#x20B9 599</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Knockout Deals</p>
+                                    </div>
+                                    <div class="pr-3 imghoverr">
+                                        <img src="Images/thumbnail_deal-4.jpg" alt="" class="imagedealofday" height="100px" width="100px">
+                                        <p class="d-block pt-2 mb-1" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Home Decore</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">From ?149+Extra10%Off</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Harpa, Zivame, Dreambe.</p>
+                                    </div>
+                                    <div class="pr-3 imghoverr">
+                                        <img src="Images/wr-hs-001-furniture-kart-original-imafxk3nwtqbjdch.jpeg" alt="" class="imagedealofday" height="100px" width="100px">
+                                        <p class="d-block pt-2 mb-1" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Swings, Stools</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">Upto 80% Off</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Knockout Deals</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--card body End-->
+                        </div>
+                        <!--Card End-->
+                    </div>
+                </section>
+                <!--Section Ends-->
+                <!-- End Deals of the day-->
+            </div>
+            <!--col 10 to 12-->
+            <div class="col my-auto box imghoverr">
+                <div>
+                    <img src="Images/thumbnail_deal-7.jpg" alt="" class="img-fluid" style="height: 330px; width:330px ;">
+                </div>
+            </div>
+        </div>
+        <!--Row End-->
+        <!--Row start-->
+        <div class="row mt-3">
+            <!--Column start-->
+            <div class="col-12">
+                <!--Deals of the day-->
+                <!--Section strat-->
+                <section>
+                    <div class="d-flex align-items-center justify-content-between imagesalign box">
+                        <!--Card Start-->
+                        <div class="card">
+                            <div class="card-header bg-white">
+                                <!--inline block to conatian with same line-->
+                                <div class="inline-block">
+                                    <span class="d-flex justify-content-between">
+                                        <p class="mb-0" style="font-size: 18px;">
+                                            <b>Men's Footwear & Instrument </b>
+                                        </p>
+
+                                        <button class="btn btn-primary float-right">View All</button>
+                                    </span>
+                                </div>
+                                <p class="float-left mt-0 mb-0 text-secondary" style="font-size: 15px;">Shop Now!</p>
+                            </div>
+                            <!--Card Body Strat-->
+                            <div class="card-body" style="overflow-y: auto;">
+                                <div class="col-12 d-flex">
+                                    <!--Mens and intrument image block-->
+                                    <div class="pr-4 imghoverr">
+                                        <img src="Images/R.jpg" alt="" class="imagedealofday" height="100px" width="100px">
+                                        <p class="d-block pt-2 mb-1" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Nike, ASICS</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">Explore More!!</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Sports Shoes</p>
+                                    </div>
+                                    <div class="pr-4 imghoverr">
+                                        <img src="Images/ad-removebg-preview.png" alt="" class="imagedealofday" height="100px" width="100px">
+                                        <p class="d-block pt-2 mb-1" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Addidas</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">Explore More!!</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Sports Shoes</p>
+                                    </div>
+                                    <div class="pr-4 imghoverr">
+                                        <img src="Images/rebook-removebg-preview.png" alt="" class="imagedealofday" height="100px" width="100px">
+                                        <p class="d-block pt-2 mb-1" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Reebok</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">Explore More!!</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Sports Shoes</p>
+                                    </div>
+                                    <div class="pr-4 imghoverr">
+                                        <img src="Images/001.jpg" alt="" class="imagedealofday">
+                                        <p class="d-block pt-2 mb-1" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Harmoniums</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">Up to 60% Off</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Shop Now!</p>
+                                    </div>
+                                    <div class="pr-4 imghoverr">
+                                        <img src="Images/R__1_-removebg-preview.png" alt="" class="imagedealofday" height="100px" width="100px">
+                                        <p class="d-block pt-2 mb-1" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Fila</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">50-70% Off</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Sports Shoes</p>
+                                    </div>
+                                    <div class="pr-4 imghoverr">
+                                        <img src="Images/002.jpg" alt="" class="imagedealofday" height="100px" width="100px">
+                                        <p class="d-block pt-2 mb-1" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Flutes</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">Upto 80% Off</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Shop Now!</p>
+                                    </div>
+                                    <div class="pr-4 imghoverr">
+                                        <img src="Images/xl-sftops4257-sassafras-original-imafhz6ucvgrtsfw-removebg-preview.png" alt="" class="imagedealofday" height="100px" width="100px">
+                                        <p class="d-block pt-2 mb-1" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Ruffled Tops</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">From ?149+Extra10%Off</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Harpa, Zivame, Dreambe.</p>
+                                    </div>
+                                    <div class="pr-4 imghoverr">
+                                        <img src="Images/wr-hs-001-furniture-kart-original-imafxk3nwtqbjdch.jpeg" alt="" class="imagedealofday" height="100px" width="100px">
+                                        <p class="d-block pt-2 mb-1" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Swings, Stools</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">Upto 80%+Extra 10%off</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Knockout Deals</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Card Body End-->
+                        </div>
+                        <!--Card End-->
+                    </div>
+                </section>
+                <!--Section Ends-->
+            </div>
+            <!--Column End-->
+        </div>
+        <!--Row End-->
+    </div>
+    <!--Container End-->
+
+</body>
+<!-- Footer -->
+<footer class="page-footer font-small text-light bg-primary mt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+        <!-- Grid row -->
+        <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto">
+
+                <!-- Links -->
+                <h5 class="text-uppercase mt-3 mb-4 fontfotter">About</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#!" class="text-light fontsx">Conatct us</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-light fontsx">About us</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-light fontsx">Carrier</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-light fontsx">Stories</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto">
+
+                <!-- Links -->
+                <h5 class="text-uppercase mt-3 mb-4 fontfotter">Help</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#!" class="text-light fontsx">Payment</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-light fontsx">Shipping</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-light fontsx">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-light fontsx">Report</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto">
+
+                <!-- Links -->
+                <h5 class="text-uppercase mt-3 mb-4 fontfotter">Social</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#!" class="text-light fontsx">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-light fontsx">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-light fontsx">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-light fontsx">You Tube</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto">
+
+                <!-- Links -->
+                <h5 class="text-uppercase mt-3 mb-4 fontfotter">Policy</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#!" class="text-light fontsx">Return</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-light fontsx">Term Of Use</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-light fontsx">Security</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-light fontsx">Privacy</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 fontsx">
+        © 2007-2021
+        <a href="https://mdbootstrap.com/" class="text-white">  Flipkart.com</a>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</html>
